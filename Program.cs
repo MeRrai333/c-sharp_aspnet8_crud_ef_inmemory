@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ApiContext>(
     opt => opt.UseInMemoryDatabase("ItemDb") 
 );
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

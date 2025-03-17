@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace dotnet_crud.Models
 {
@@ -11,6 +8,7 @@ namespace dotnet_crud.Models
         public String FirstName { get; set; } = String.Empty;
         public String LastName { get; set; } = String.Empty;
 
-        public List<HistoryItemEmployee>? HistoryItems { get; set; } = [];
+        [JsonIgnore]
+        public List<HistoryItemEmployee>? HistoryItems { get; set; } = new List<HistoryItemEmployee>();
     }
 }

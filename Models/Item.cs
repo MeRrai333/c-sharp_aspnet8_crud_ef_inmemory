@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace dotnet_crud.Models
 {
     public class Item
@@ -6,6 +8,7 @@ namespace dotnet_crud.Models
         public string Name { get; set; } = string.Empty;
         public string Detail { get; set; } = string.Empty;
         public int? Qty {get; set;}
-        public List<HistoryItemEmployee>? HistoryItems { get; set; } = [];
+        [JsonIgnore]
+        public List<HistoryItemEmployee>? HistoryItems { get; set; } = new List<HistoryItemEmployee>();
     }
 }

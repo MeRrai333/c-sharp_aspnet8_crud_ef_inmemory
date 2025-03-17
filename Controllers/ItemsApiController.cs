@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using dotnet_crud.Data;
 using dotnet_crud.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 
 namespace dotnet_crud.Controllers
 {
